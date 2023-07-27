@@ -31,5 +31,15 @@ describe('Age', () => {
     age.convertToPlanetAges();
     expect(age.jupiterAge).toEqual(2);
   });
+  test('It should correctly return how many years have passed on each planet since a past birthday', () => {
+    const age = new Age(33, 25);
+    age.findYearsFrom();
+    expect(age.yearsSince.earthYears).toEqual(8);
+    expect(age.yearsSince.mercuryYears).toEqual(33);
+    expect(age.yearsSince.venusYears).toEqual(12);
+    expect(age.yearsSince.marsYears).toEqual(4);
+    expect(age.yearsSince.jupiterYears).toEqual(0);
+
+  });
   
 });
