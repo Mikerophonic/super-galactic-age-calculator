@@ -17,12 +17,20 @@ export class Age {
     }
 
     findYearsFrom() {
-        let earthYears = this.earthAge - this.secondAge
-        this.yearsFrom.earthYears = earthYears
-        this.yearsFrom.mercuryYears = Math.floor(earthYears / .24)
-        this.yearsFrom.venusYears = Math.floor(earthYears / .62)
-        this.yearsFrom.marsYears = Math.floor(earthYears / 1.88)
-        this.yearsFrom.jupiterYears = Math.floor(earthYears / 11.86)
-
+        if (this.earthAge > this.secondAge) {
+            let earthYears = this.earthAge - this.secondAge
+            this.yearsFrom.earthYears = earthYears
+            this.yearsFrom.mercuryYears = Math.floor(earthYears / .24)
+            this.yearsFrom.venusYears = Math.floor(earthYears / .62)
+            this.yearsFrom.marsYears = Math.floor(earthYears / 1.88)
+            this.yearsFrom.jupiterYears = Math.floor(earthYears / 11.86)
+        } else {
+            let earthYears = this.secondAge - this.earthAge
+            this.yearsFrom.earthYears = earthYears
+            this.yearsFrom.mercuryYears = Math.floor(earthYears / .24)
+            this.yearsFrom.venusYears = Math.floor(earthYears / .62)
+            this.yearsFrom.marsYears = Math.floor(earthYears / 1.88)
+            this.yearsFrom.jupiterYears = Math.floor(earthYears / 11.86)
+        }
     }
 }
