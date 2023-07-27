@@ -10,5 +10,7 @@ export class Age {
     convertToPlanetAges() {
         this.mercuryAge = Math.floor(this.earthAge / .24)
         this.venusAge = Math.floor(this.earthAge / .62)
+        this.marsAge = Math.floor(this.earthAge / 1.88)
+
     }
 }
