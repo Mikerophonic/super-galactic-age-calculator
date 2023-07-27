@@ -16,6 +16,11 @@ describe('Age', () => {
     age.convertToPlanetAges();
     expect(age.mercuryAge).toEqual(7);
   });
+  test('It should correctly return the Venus age (rounded down)', () => {
+    const age = new Age(33);
+    age.convertToPlanetAges();
+    expect(age.venusAge).toEqual(20);
+  });
   
   
 });
