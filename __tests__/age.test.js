@@ -42,14 +42,14 @@ describe('Age', () => {
 
   });
 
-  test('It should correctly return how many years will pass on each planet until a future birthday', () => {
+  test('It should correctly return how many years will pass on each planet (Jupiter rounded to tenths) until a future birthday', () => {
     const age = new Age(33, 50);
     age.findYearsFrom();
     expect(age.yearsFrom.earthYears).toEqual(17);
     expect(age.yearsFrom.mercuryYears).toEqual(70);
     expect(age.yearsFrom.venusYears).toEqual(27);
     expect(age.yearsFrom.marsYears).toEqual(9);
-    expect(age.yearsFrom.jupiterYears).toEqual(1);
+    expect(age.yearsFrom.jupiterYears).toEqual(1.4);
 
   });
   

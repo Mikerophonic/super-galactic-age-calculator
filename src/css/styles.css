@@ -2,6 +2,10 @@
     display: none
 }
 
+.hidden2 {
+    display: none
+}
+
 body {
     background-color: lightyellow;
 }

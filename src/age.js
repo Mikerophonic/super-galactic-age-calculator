@@ -30,7 +30,7 @@ export class Age {
             this.yearsFrom.mercuryYears = Math.floor(earthYears / .24);
             this.yearsFrom.venusYears = Math.floor(earthYears / .62);
             this.yearsFrom.marsYears = Math.floor(earthYears / 1.88);
-            this.yearsFrom.jupiterYears = Math.floor(earthYears / 11.86);
+            this.yearsFrom.jupiterYears = Math.round(10 * (earthYears / 11.86)) / 10;
         }
     }
 }
