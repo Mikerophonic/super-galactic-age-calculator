@@ -11,4 +11,14 @@ describe('Age', () => {
     expect(age.jupiterAge).toEqual("");
   });
 
+  test('It should correctly return the Mercury age (rounded down)', () => {
+    const age = new Age(33);
+    expect(age.earthAge).toEqual(33);
+    expect(age.mercuryAge).toEqual("7");
+    expect(age.venusAge).toEqual("");
+    expect(age.marsAge).toEqual("");
+    expect(age.jupiterAge).toEqual("");
+  });
+  
+  
 });
