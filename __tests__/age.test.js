@@ -24,8 +24,7 @@ describe('Age', () => {
   test('It should correctly return the Mars age (rounded down)', () => {
     const age = new Age(33);
     age.convertToPlanetAges();
-    expect(age.marsAge).toEqual(20);
+    expect(age.marsAge).toEqual(17);
   });
-  
   
 });
