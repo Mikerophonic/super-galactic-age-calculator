@@ -2,13 +2,13 @@ import { Age } from './../src/age.js';
 
 describe('Age', () => {
 
-  test('It should correctly create an age class with five as yet undefined properties for different planets', () => {
-    const age = new Age();
-    expect(age.earthAge).toEqual(undefined);
-    expect(age.mercuryAge).toEqual(undefined);
-    expect(age.venusAge).toEqual(undefined);
-    expect(age.marsAge).toEqual(undefined);
-    expect(age.jupiterAge).toEqual(undefined);
+  test('It should correctly create an age class with an Earth age and four as yet empty properties for different planets', () => {
+    const age = new Age(33);
+    expect(age.earthAge).toEqual(33);
+    expect(age.mercuryAge).toEqual("");
+    expect(age.venusAge).toEqual("");
+    expect(age.marsAge).toEqual("");
+    expect(age.jupiterAge).toEqual("");
   });
 
 });
