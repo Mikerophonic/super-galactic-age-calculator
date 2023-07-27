@@ -26,5 +26,10 @@ describe('Age', () => {
     age.convertToPlanetAges();
     expect(age.marsAge).toEqual(17);
   });
+  test('It should correctly return the Jupiter age (rounded down)', () => {
+    const age = new Age(33);
+    age.convertToPlanetAges();
+    expect(age.jupiterAge).toEqual(2);
+  });
   
 });
