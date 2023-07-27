@@ -14,12 +14,17 @@ describe('Age', () => {
   test('It should correctly return the Mercury age (rounded down)', () => {
     const age = new Age(33);
     age.convertToPlanetAges();
-    expect(age.mercuryAge).toEqual(7);
+    expect(age.mercuryAge).toEqual(137);
   });
   test('It should correctly return the Venus age (rounded down)', () => {
     const age = new Age(33);
     age.convertToPlanetAges();
-    expect(age.venusAge).toEqual(20);
+    expect(age.venusAge).toEqual(53);
+  });
+  test('It should correctly return the Mars age (rounded down)', () => {
+    const age = new Age(33);
+    age.convertToPlanetAges();
+    expect(age.marsAge).toEqual(20);
   });
   
   
