@@ -33,4 +33,10 @@ export class Age {
             this.yearsFrom.jupiterYears = Math.round(10 * (earthYears / 11.86)) / 10;
         }
     }
+
+    findJupiterDogYears() {
+
+    }
+
+
 }

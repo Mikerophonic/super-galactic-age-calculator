@@ -52,5 +52,9 @@ describe('Age', () => {
     expect(age.yearsFrom.jupiterYears).toEqual(1.4);
 
   });
-  
+
+  test('It should correctly caluculate age in dog years on Jupiterr in 2073')
+  const age = new Age(33);
+  findJupiterDogYears();
+  expect(age.jupiterDogYears).toEqual(48)
 });

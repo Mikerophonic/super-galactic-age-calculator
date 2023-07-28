@@ -12,7 +12,7 @@ function handleCurrentAgeForm() {
     document.getElementById("venus-age").innerText = age.venusAge
     document.getElementById("mars-age").innerText = age.marsAge
     document.getElementById("jupiter-age").innerText = age.jupiterAge
-
+    document.getElementById("current-age-form").setAttribute("class", "hidden")
     document.getElementById("results-div").removeAttribute("class");
   }
 
@@ -27,11 +27,25 @@ function handleCurrentAgeForm() {
     document.getElementById("venus-years").innerText = age.yearsFrom.venusYears
     document.getElementById("mars-years").innerText = age.yearsFrom.marsYears
     document.getElementById("jupiter-years").innerText = age.yearsFrom.jupiterYears
-    document.getElementsByClassName("second-age").innerText = secondAge;
-
+    const elements = document.getElementsByClassName("second-age");
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].innerText = secondAge;
+    }
+    
+    document.getElementById("results-div").setAttribute("class", "hidden");
     document.getElementById("results-div2").removeAttribute("class");
   }
 
+  function handleJupiterDogYearsClick() {
+    document.getElementById("results-div2").setAttribute("class", "hidden");
+    document.getElementById("results-div3").removeAttribute("class");
+  }
+
+function handleMayflyLivesClick() {
+    document.getElementById("results-div3").setAttribute("class", "hidden");
+    document.getElementById("results-div4").removeAttribute("class");
+    }
+    
 
   window.addEventListener("load", function() {
     document.getElementById("current-age-form").addEventListener("submit", handleCurrentAgeForm);
