@@ -28,7 +28,7 @@ This application was created as my fifth independent project for Epicodus. It de
 * Lint JS files in the src folder with $ npm run lint
 * Run tests with Jest using $ npm run test
 
-[Github Pages - Super Galactic Age Calculator](https://mikerophonic.github.io/pizza-parlor)
+[Github Pages - Super Galactic Age Calculator](https://mikerophonic.github.io/super-galactic-age-calculator)
 
 
 ## Known Bugs
