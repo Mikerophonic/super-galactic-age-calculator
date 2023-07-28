@@ -40,7 +40,11 @@ export class Age {
 
     findMayflyLives() {
         this.mayflyLives = this.earthAge * 525600 / 5;
+        this.mayflyLives = this.mayflyLives.toLocaleString("en-US")
     }
 
+    findSunAge() {
+        
+    }
 
 }

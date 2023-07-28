@@ -59,10 +59,16 @@ describe('Age', () => {
   expect(age.jupiterDogYears).toEqual(48)
   });
 
-  test('It should correctly calculate how many mayfly lifespans the user has lived', () => {
+  test('It should correctly calculate how many mayfly lifespans the user has lived, and return it as a correctly formatted string', () => {
     const age = new Age(33);
     age.findMayflyLives();
-    expect(age.mayflyLives).toEqual(3468960)
+    expect(age.mayflyLives).toEqual("3,468,960")
+    });
+
+  test('It should correctly calculate how many times older he sun is than the user', () => {
+    const age = new Age(33);
+    age.findSunAge();
+    expect(age.sunAge).toEqual("139,484,848")
     });
 
 
