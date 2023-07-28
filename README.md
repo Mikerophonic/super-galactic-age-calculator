@@ -1,31 +1,43 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### web application that takes a user's age and returns information such as how many years old they are on different planets
 
-#### By (Your Name Here)
+#### By Michael G Connelly
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* JavaScript ES6
+* npm
+* webpack
+* eslint
+* Jest
+* babel
 
 ## Description
 
+This application was created as my fifth independent project for Epicodus. It demonstrates my understanding of Test Driven Development using Jest, as well ES6 classes, managing dependencies with npm, and using webpack to lint, bunudle, and process code. 
+
 ## Setup/Installation Requirements
 
-
-* Install all packages with $ npm install.
+* Clone this repository to your local machine: $ git clone https://github.com/Mikerophonic/super-galactic-age-calculator.git
+* Install all packages with $ npm install
 * Build the project using webpack with $ npm run build
 * Start a development server with $ npm run start
 * Lint JS files in the src folder with $ npm run lint
 * Run tests with Jest using $ npm run test
 
+[Github Pages - Super Galactic Age Calculator](https://mikerophonic.github.io/pizza-parlor)
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+No known bugs
 
 ## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+Copyright (c) _2023_ _Michael G Connelly_

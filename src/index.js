@@ -54,6 +54,15 @@ function handleMayflyLivesClick() {
     document.getElementById("results-div3").setAttribute("class", "hidden");
     document.getElementById("results-div4").removeAttribute("class");
 }
+
+function handleSunAgeClick() {
+    const currentAge = parseInt(document.getElementById('age-input').value);
+    const age = new Age(currentAge);
+    age.findSunAge();
+    document.getElementById("sun-lives").innerText = age.sunAge;
+    document.getElementById("results-div4").setAttribute("class", "hidden");
+    document.getElementById("results-div5").removeAttribute("class");
+}
     
 
 window.addEventListener("load", function() {
@@ -61,5 +70,7 @@ window.addEventListener("load", function() {
     document.getElementById("second-age-form").addEventListener("submit", handleSecondAgeForm);
     document.getElementById("jupiter-dog-years-btn").addEventListener("click", handleJupiterDogYearsClick);
     document.getElementById("mayfly-lives-btn").addEventListener("click", handleMayflyLivesClick);
+    document.getElementById("last-btn").addEventListener("click", handleSunAgeClick);
+
 
 });

@@ -52,7 +52,7 @@ form {
     color: #f0f0f0;
     border-radius: 5px;
     margin:10px;
-    width:4rem;
+    width:3.9rem;
 }
 
 .input-box2 {
@@ -92,7 +92,8 @@ form {
 }
 
 #jupiter-dog-years-btn,
-#mayfly-lives-btn {
+#mayfly-lives-btn,
+#last-btn {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -105,7 +106,8 @@ form {
 }
 
 #jupiter-dog-years-btn:hover,
-#mayfly-lives-btn:hover {
+#mayfly-lives-btn:hover,
+#last-btn:hover {
     background-color: #00253e;
 }
 
