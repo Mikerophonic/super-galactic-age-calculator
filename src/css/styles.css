@@ -1,10 +1,12 @@
 body {
     background-color: #051c2c; 
+    background-image: url('./../assets/images/background-stars.jpg');
     color: #f0f0f0; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Space Mono', monospace;
     text-align: center;
     margin: 0;
     padding: 0;
+
 }
 
 .container {
@@ -17,14 +19,28 @@ body {
 h1 {
     font-size: 36px;
     margin-bottom: 30px;
+    font-family: 'Orbitron', sans-serif;
+    color: yellow
 }
 
 form {
+    align-items: center;
+}
+
+
+
+.form-group {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .label {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.bonus {
     font-size: 18px;
 }
 
@@ -39,19 +55,36 @@ form {
     width:4rem;
 }
 
-.submit-btn {
+.input-box2 {
+    padding: 10px 20px;
+    font-size: 38px;
+    border: 2px solid #f0f0f0;
+    background-color: #051c2c;
+    color: #f0f0f0;
+    border-radius: 5px;
+    margin:10px;
+    width:3rem;
+}
+
+.submit-btn,
+#jupiter-dog-years-btn,
+#mayfly-lives-btn {
+    width: 160px;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color: #00497c; 
+    background-color: #00497c;
     color: #f0f0f0;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
-.submit-btn:hover {
-    background-color: #00253e; 
+.submit-btn:hover,
+#jupiter-dog-years-btn:hover,
+#mayfly-lives-btn:hover {
+    background-color: #00253e;
 }
 
 .hidden {
@@ -78,5 +111,19 @@ form {
 
 .span-class {
     font-size:30px;
+    font-family: "michroma";
+    color: lightblue;
+}
+
+.results-div-inner {
+    background-color: #000000e7;
+    margin: 10px auto;
+    padding: 20px 20px 30px 20px; 
+    border-radius: 50px; 
+    width: 850px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 

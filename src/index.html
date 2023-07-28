@@ -4,46 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Galactic Age Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron&display=swap" rel="stylesheet"> 
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <h1>👩‍🚀 Super Galactic Age Calculator 👨‍🚀</h1>
-<div class="container">
-    <form id="current-age-form">
-        <label for="age-input" class="label">Please enter your age:</label>
-        <input type="text" id="age-input" class="input-box"><br>
-        <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
-    </form>
-    <div id="results-div" class="hidden">
-        <p>On <b>Mercury</b>, you are <b><span id="merc-age" class="span-class"></span></b> years old, ya old geezer!</p>
-        <p>On <b>Venus</b>, you are <b><span id="venus-age" class="span-class"></span></b> years old. You're gettin' up there...</p>
-        <p>On <b>Mars</b>, you are <b><span id="mars-age" class="span-class"></span></b> years old. You basically still have your  whole life ahead of you!</p>
-        <p>On <b>Jupiter</b>, you are a lil' <b><span id="jupiter-age" class="span-class"></span></b> year old baby. Goo-goo-ga-ga.</p><br><br>
-        <p>BONUS! Find out how many planet years away you are from being another age, past or future.</p>
-        <form id="second-age-form">
-            <label for="second-age-input" class="label">Enter a different age here:</label>
-            <input type="text" id="second-age-input" class="input-box"><br>
-            <button type="submit" id="submit-btn2" class="submit-btn">Submit</button>
-        </form>
+    <div class="container">
+        <div class="submit-container">
+            <form id="current-age-form">
+
+            <label for="age-input" class="label">Please enter your age:</label>
+            <input type="text" id="age-input" class="input-box">
+
+            <div class="form-group">
+                <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+            </div>
+            </form>
+        </div>
+        <div id="results-div" class="hidden">
+            <div class="results-div-inner">
+                <p>On <b>Mercury</b>, you are <b><span id="merc-age" class="span-class"></span></b> years old, ya old geezer!</p>
+                <p>On <b>Venus</b>, you are <b><span id="venus-age" class="span-class"></span></b> years old. You're gettin' up there...</p>
+                <p>On <b>Mars</b>, you are <b><span id="mars-age" class="span-class"></span></b> years old. You basically still have your  whole life ahead of you!</p>
+                <p>On <b>Jupiter</b>, you are a lil' <b><span id="jupiter-age" class="span-class"></span></b> year old baby. Goo-goo-ga-ga.</p>
+            </div>
+            <span class="bonus"><p>BONUS! Find out how many planet years away you are from being another age, past or future.</p></span>
+            <form id="second-age-form">
+                <label for="second-age-input" class="label">Enter a different age here:</label>
+                <input type="text" id="second-age-input" class="input-box2">
+                <button type="submit" id="submit-btn2" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <div id="results-div2" class ="hidden">
+            <div class="results-div-inner">
+                <p>You are <b><span id="earth-years" class="span-class"></span></b> Earth years away from being <span class="second-age"></span>. Duh.</p>
+                <p>You are <b><span id="merc-years" class="span-class"></span></b> Mercury years away from being <span class="second-age"></span>. Think of all the things you could've accomplished / could still accomplish. (That's how this works right?)</p>
+                <p>You are <b><span id="venus-years" class="span-class"></span></b> Venus years away from being <span class="second-age"></span>. That's a good while.</p>
+                <p>You are <b><span id="mars-years" class="span-class"></span></b> Mars years away from being <span class="second-age"></span>. Pretty close..!</p>
+                <p>You are <b><span id="jupiter-years" class="span-class"></span></b> Jupiter years away from being <span class="second-age"></span>. You are basically <span class="second-age"></span> now.</p>
+            </div>
+            <span class="bonus"><p>Want more? Find out how old you will be in dog years on Jupiter in the year 2073.</p></span>
+            <button type="button" id="jupiter-dog-years-btn">Click here</button>
+        </div>
+        <div id="results-div3" class="hidden">
+            <div class="results-div-inner">
+                <p>You will be <span id="dog-years" class="span-class"></span> in dog years on Jupiter in 2073. Important information!</p>
+            </div>
+            
+            <span class="bonus"><p>You're still here? OK, find out how many lifetimes of a mayfly you've been alive for:</p></span>
+            <button type="button" id="mayfly-lives-btn">Click here</button>
+        </div>
+        <div id="results-div4" class="hidden">
+            <div class="results-div-inner">
+                <p>You've been alive for <span id="mayfly-lives" class="span-class"></span> mayfly lives. So many dead mayflies...</p>
+            </div>
+        </div>
     </div>
-    <div id="results-div2" class ="hidden">
-        <p>You are <b><span id="earth-years" class="span-class"></span></b> Earth years away from being <span class="second-age"></span>. Duh.</p>
-        <p>You are <b><span id="merc-years" class="span-class"></span></b> Mercury years away from being <span class="second-age"></span>. Think of all the things you could've accomplished / could still accomplish. (That's how this works right?)</p>
-        <p>You are <b><span id="venus-years" class="span-class"></span></b> Venus years away from being <span class="second-age"></span>. That's a good while.</p>
-        <p>You are <b><span id="mars-years" class="span-class"></span></b> Mars years away from being <span class="second-age"></span>. Pretty close..!</p>
-        <p>You are <b><span id="jupiter-years" class="span-class"></span></b> Jupiter years away from being <span class="second-age"></span>. You are basically <span class="second-age"></span> now.</p><br>
-        <p>Want more? Find out how old you will be in dog years on Jupiter in the year 2073.</p>
-        <button type="button" id="jupiter-dog-years-btn">Click here</button>
-    </div>
-    <div id="results-div3" class="hidden">
-        <p>You will be <span></span>. Important information!</p><br>
-        
-        <p>You're still here? OK, find out how many lifetimes of a mayfly you've been alive for:</p>
-        <button type="button" id="mayfly-lives-btn">Click here</button>
-    </div>
-    <div id="results-div4" class="hidden">
-    <p>You've been alive for <span></span> mayfly lives. So many dead mayflies...</p>
-    </div>
-</div>
 
 
 

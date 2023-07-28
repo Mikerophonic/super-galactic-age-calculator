@@ -35,11 +35,11 @@ export class Age {
     }
 
     findJupiterDogYears() {
-        this.jupiterDogYears = Math.floor(((this.earthAge + 50) *  7 / 11.86))
+        this.jupiterDogYears = Math.floor(((this.earthAge + 50) *  7 / 11.86));
     }
 
     findMayflyLives() {
-        this.mayflyLives = this.earthAge * 525600 / 5
+        this.mayflyLives = this.earthAge * 525600 / 5;
     }
 
 
