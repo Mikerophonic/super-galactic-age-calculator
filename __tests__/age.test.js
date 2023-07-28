@@ -53,10 +53,17 @@ describe('Age', () => {
 
   });
 
-  test('It should correctly caluculate age in dog years on Jupiterr in 2073', () => {
+  test('It should correctly calculate age in dog years on Jupiter in 2073', () => {
   const age = new Age(33);
   age.findJupiterDogYears();
   expect(age.jupiterDogYears).toEqual(48)
   });
+
+  test('It should correctly calculate how many mayfly lifespans the user has lived', () => {
+    const age = new Age(33);
+    age.findMayflyLives();
+    expect(age.mayflyLives).toEqual(3468960)
+    });
+
 
 });

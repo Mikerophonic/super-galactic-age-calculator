@@ -38,5 +38,9 @@ export class Age {
         this.jupiterDogYears = Math.floor(((this.earthAge + 50) *  7 / 11.86))
     }
 
+    findMayflyLives() {
+
+    }
+
 
 }
