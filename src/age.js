@@ -44,7 +44,8 @@ export class Age {
     }
 
     findSunAge() {
-        
+        this.sunAge = Math.floor(4603000000 / this.earthAge)
+        this.sunAge = this.sunAge.toLocaleString("en-US")
     }
 
 }
