@@ -39,7 +39,7 @@ export class Age {
     }
 
     findMayflyLives() {
-
+        this.mayflyLives = this.earthAge * 525600 / 5
     }
 
 
