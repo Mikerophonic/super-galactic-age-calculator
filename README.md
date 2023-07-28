@@ -17,7 +17,7 @@
 
 ## Description
 
-This application was created as my fifth independent project for Epicodus. It demonstrates my understanding of Test Driven Development using Jest, as well ES6 classes, managing dependencies with npm, and using webpack to lint, bunudle, and process code. 
+This application was created as my fifth independent project for Epicodus. It demonstrates my understanding of Test Driven Development using Jest, as well ES6 classes, managing dependencies with npm, and using webpack to lint, bundle, and process code. 
 
 ## Setup/Installation Requirements
 
